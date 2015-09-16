@@ -1,0 +1,132 @@
+//-------------------------------------
+// Typography
+//-------------------------------------
+
+// Webfonts
+@font-face {
+    font-family: 'Apercu';
+    src: url('/fonts/apercu/apercu_regular-webfont.eot');
+    src: url('/fonts/apercu/apercu_regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/apercu/apercu_regular-webfont.woff2') format('woff2'),
+    url('/fonts/apercu/apercu_regular-webfont.woff') format('woff'),
+    url('/fonts/apercu/apercu_regular-webfont.ttf') format('truetype'),
+    url('/fonts/apercu/apercu_regular-webfont.svg#apercuregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('/fonts/apercu/apercu_bold-webfont.eot');
+    src: url('/fonts/apercu/apercu_bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/apercu/apercu_bold-webfont.woff2') format('woff2'),
+    url('/fonts/apercu/apercu_bold-webfont.woff') format('woff'),
+    url('/fonts/apercu/apercu_bold-webfont.ttf') format('truetype'),
+    url('/fonts/apercu/apercu_bold-webfont.svg#apercubold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+// Whole page
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    font-size: $fontsizeM;
+    line-height: 1.6;
+    font-family: 'Apercu', Arial, sans-serif;
+    letter-spacing: .05em;
+    color: $colorDarkPrimary;
+    background-color: $colorLightSecondary;
+    margin: 0;
+}
+
+// Headlines
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: inherit;
+    line-height: 1.4;
+    color: inherit;
+    letter-spacing: .08em;
+}
+
+h1, h2, h3,
+.h1, .h2, .h3 {
+    margin-top: $spaceLarge;
+    margin-bottom: $spaceMedium;
+    font-weight: 400;
+}
+
+h4, h5, h6,
+.h4, .h5, .h6 {
+    margin-top: $spaceMedium;
+    margin-bottom: $spaceMedium;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+h1,
+.h1 { font-size: $fontsizeXXXL }
+
+h2, h3,
+.h2, .h3 { font-size: $fontsizeXL }
+
+h4,
+.h4 { font-size: $fontsizeL }
+
+h5, h6,
+.h5,.h6 { font-size: $fontsizeM }
+
+// Links
+a {
+    color: $colorDarkPrimary;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        color: $colorDarkPrimary;
+        text-decoration: underline;
+    }
+
+    &::focus {
+        outline: thin dotted;
+        outline: 5px auto -webkit-focus-ring-color;
+        outline-offset: -2px;
+    }
+
+    // Links on dark backgrounds
+    &.a-white {
+        color: white;
+
+        &:hover,
+        &:focus { color: $colorLightSecondary }
+    }
+}
+
+// Figures & Images
+figure { margin: 0 }
+
+img { vertical-align: middle }
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+// Horizontal Lines
+hr {
+    margin-top: $spaceLarge;
+    margin-bottom: $spaceLarge;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+// Text elements
+p { margin: 0 0 $spaceMedium }
+
+em {
+    font-weight: 700;
+    font-style: normal;
+}

@@ -1,0 +1,27 @@
+//-------------------------------------
+// Defining how prices look
+//-------------------------------------
+
+//-------------------------------------
+// <div class="price-box">
+//   <div class="price-box__regular-price">
+//     <span>$65</span>
+//   </div>
+//   <div class="price-box__old-price">
+//     <span>$80</span>
+//   </div>
+//   <div class="price-box__special-price">
+//     <span>$10</span>
+//   </div>
+// </div>
+//-------------------------------------
+.price-box {
+    .price-box__old-price {
+      color: $colorMedium;
+      text-decoration: line-through;
+    }
+
+    .price-box__special-price {
+      color: $colorHighlightNegative;
+    }
+}

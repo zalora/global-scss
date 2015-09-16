@@ -1,0 +1,52 @@
+/**
+ * Abstract object styles for building various types of components (like blog
+ * comments, Tweets, etc) that feature a left- or right-aligned image alongside
+ * textual content.
+ *
+ * USAGE:
+ *   <div class="media">
+ *     <a class="lfloat" href="#">
+ *       <img class="media-object" src="..." alt="...">
+ *     </a>
+ *     <div class="media-body">
+ *       <h4 class="media-heading">Media heading</h4>
+ *       ...
+ *     </div>
+ *   </div>
+**/
+.media, .media-body {
+  overflow: hidden;
+  zoom: 1;
+}
+
+.media {
+  margin-top: 15px;
+  .media {
+    margin-top: 15px;
+  }
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.media-object {
+  display: block;
+}
+
+.media-heading {
+  margin: 0 0 5px;
+}
+
+.media > {
+  .lfloat {
+    margin-right: 10px;
+  }
+  .rfloat {
+    margin-left: 10px;
+  }
+}
+
+.media-list {
+  padding-left: 0;
+  list-style: none;
+}

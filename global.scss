@@ -1,0 +1,41 @@
+//-------------------------------------
+// Include Variables
+//-------------------------------------
+@import "variables";
+
+//-------------------------------------
+// Framework
+//-------------------------------------
+@import "normalize";
+@import "mixins";
+@import "animations";
+
+/* Basic styling for the whole site */
+@import "base-styling";
+
+
+//-------------------------------------
+// Icons
+// import the automatically by Grunt generated _icons-sprite.scss
+//-------------------------------------
+@import "icons-sprite";
+@import "icons";
+
+//-------------------------------------
+// Helper classes
+//-------------------------------------
+@import "helpers/spacing";
+@import "helpers/state";
+@import "helpers/ui";
+@import "helpers/grid";
+
+//-------------------------------------
+// Components
+//-------------------------------------
+@import "components/buttons";
+@import "components/tables";
+@import "components/forms";
+@import "components/titlebars";
+@import "components/social";
+@import "components/price";
+@import "components/media";

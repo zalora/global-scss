@@ -1,0 +1,30 @@
+//-------------------------------------
+// Tables
+//-------------------------------------
+
+table {
+    border-collapse: collapse;
+
+    th {
+        @extend .fss;
+        @extend .txtUpper;
+        padding: 5px;
+    }
+
+    td {
+        vertical-align: top;
+        padding: 20px 5px;
+    }
+
+    th, 
+    td {
+        padding-left: 0;
+        border-bottom: 1px solid $colorMedium;
+
+        &:last-child { padding-right: 0 }
+    } 
+
+    tbody tr:last-child {
+        th, td { border-bottom: none }
+    }
+}

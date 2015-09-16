@@ -1,0 +1,396 @@
+/* @TODO: 2015-09-01 this contains mostly helper classes and TODO statements to sort out later*/
+
+small, .small {
+  font-size: 85%;
+}
+
+.container {
+  margin: 0 auto;
+  width: 996px;
+  &:before {
+    display: table;
+    content: " ";
+  }
+  &:after {
+    display: table;
+    content: " ";
+    clear: both;
+  }
+}
+
+/* ====== Form styles ===== */
+
+input:invalid {
+  background: #fff;
+}
+
+/* ====== UI styles ====== */
+
+/* Box Styles */
+
+/* Borders */
+
+.ui-border {
+  border: 1px solid $colorMedium;
+}
+
+.ui-borderTop {
+  border-top: 1px solid $colorMedium;
+}
+
+.ui-borderBottom {
+  border-bottom: 1px solid $colorMedium;
+}
+
+.ui-borderLeft {
+  border-left: 1px solid $colorMedium;
+}
+
+.ui-borderRight {
+  border-right: 1px solid $colorMedium;
+}
+
+/* dotted border */
+
+/* dashed border */
+
+/* Default Grid */
+
+.ui-grid {
+  border: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.ui-gridFull {
+  display: table;
+  width: 100%;
+}
+
+.ui-gridBorder {
+  border: 1px solid #d3d3d3;
+}
+
+.ui-grid {
+  .vTop {
+    vertical-align: top;
+  }
+  .vMid {
+    vertical-align: middle;
+  }
+  .vBot {
+    vertical-align: bottom;
+  }
+  .hLeft {
+    text-align: left;
+  }
+  .hCent {
+    text-align: center;
+  }
+  .hRght {
+    text-align: right;
+  }
+}
+
+/* List Items */
+
+.ui-listItem {
+  display: block;
+}
+
+.ui-listHorizontal .ui-listItem {
+  display: inline-block;
+  /* IE7 hack to mimic inline-block */
+  *display: inline;
+  *zoom: 1;
+}
+
+.ie7 .ui-listHorizontal .ui-listItem {
+  display: block;
+  float: left;
+  margin-right: 5px;
+}
+
+.ui-listItemBorder .ui-listItem {
+  border: 1px solid;
+}
+
+.ui-listBulleted {
+  list-style-type: disc;
+  margin-left: 13px;
+}
+
+/* inline-block and block element */
+
+.ui-inlineBlock {
+  display: inline-block;
+  /* IE7 hack to mimic inline-block */
+  *display: inline;
+  *zoom: 1;
+}
+
+.ui-block {
+  display: block;
+}
+
+/* QuickView Modal Window */
+
+.ui-dialog {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 501;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#67676750,endColorstr=#67676750);
+  /* fallback for IE 8 and lower since rgba is not supprted */
+  background-color: rgba(103, 103, 103, 0.5);
+  .container {
+    position: relative;
+    padding: 36px 15px 20px;
+    background-color: #FFFFFF;
+    border: 1px solid #676767;
+    box-shadow: 0 0 15px #676767;
+    zoom: 1;
+  }
+}
+
+/* fixes the IE7 / IE8 unclickable overlay bug */
+
+.ui-dialogProcessing .container {
+  width: 50%;
+  min-height: 100px;
+  margin: 50px auto 0;
+  text-align: center;
+}
+
+/* ====== Typography ====== */
+
+// Font sizes
+.fsxs,
+.fss,
+.fsm    { font-size: $fontsizeS }
+
+.fsl    { font-size: $fontsizeL }
+.fsxl   { font-size: $fontsizeXL }
+.fsxxl  { font-size: $fontsizeXXL }
+.fsxxxl { font-size: $fontsizeXXXL }
+
+/* Font Weight */
+
+.strong {
+  font-weight: bold;
+}
+
+.normal {
+  font-weight: normal;
+}
+
+/* Font Style */
+
+.italic {
+  font-style: italic;
+}
+
+/* hides text replaced by images */
+
+.hiddenText {
+  text-indent: -10000px;
+  overflow: hidden;
+}
+
+/* text-transform */
+
+.txtUpper {
+  text-transform: uppercase;
+}
+
+.txtLower {
+  text-transform: lowercase;
+}
+
+/* text-align */
+
+.txtRight {
+  text-align: right;
+}
+
+.txtLeft {
+  text-align: left;
+}
+
+.txtCenter {
+  text-align: center;
+}
+
+/* word-wrap */
+
+.wordwrap {
+  word-wrap: break-word;
+}
+
+/* line height helper */
+
+.lhn {
+  line-height: 100%;
+}
+
+.lhxs {
+  line-height: 10px;
+}
+
+.lhs {
+  line-height: 11px;
+}
+
+.lhm {
+  line-height: 12px;
+}
+
+.lhml {
+  line-height: 14px;
+}
+
+.lhl {
+  line-height: 16px;
+}
+
+.lhxl {
+  line-height: 18px;
+}
+
+.lhmxl {
+  line-height: 20px;
+}
+
+.lhxxl {
+  line-height: 22px;
+}
+
+.success {
+  color: #6c8516;
+}
+
+.error {
+  /* color: #820000; */
+}
+
+/* border styles */
+
+.box-bdr, .ui-listLight .ui-listItem, .ui-tabViewNav > li, .cartTable .cartItems tr, .hdSimple, .categoryMenu, .fct-scroll {
+  border-color: $colorMedium;
+}
+
+.ui-listMedium .ui-listItem {
+  border-color: #ccc;
+}
+
+.ui-listLight .ui-listItem.active-list-item {
+  border-color: #888;
+}
+
+.box-bdrDark, .prd-colorList li.active, .ui-listDark .ui-listItem {
+  border-color: #333;
+}
+
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+.affix {
+  position: fixed;
+}
+
+.l-menu.affix {
+  background: #fff;
+  border-top: medium none;
+  margin-top: 24px;
+  opacity: 0.85;
+  z-index: 90;
+}
+
+/* ====== Visual Layout Styles ====== */
+
+/* Page Background */
+
+.ui-page-bg {
+  background-color: #f6f6f6;
+}
+
+/* Links */
+
+/* Font color */
+
+.txtLight {
+  color: #888;
+}
+
+.txtGreyLight {
+  color: #6c6c6c;
+}
+
+.txtDark, .txtBlack {
+  color: #000;
+}
+
+.txtGray {
+  color: #666;
+}
+
+.txtUpper {
+  text-transform: uppercase;
+}
+
+/* placeholder attribute */
+
+::-webkit-input-placeholder, :-moz-placeholder {
+  color: #b4b4b4;
+}
+
+/**
+ * Box Modules
+ */
+
+/* ====== Product Preview Module (ppv) ====== */
+
+.box {
+    position: relative;
+    display: block;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.box-hd,
+.box-bd,
+.box-ft {
+    padding: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.box-hd,
+.box-bd,
+.box-ft {
+
+}
+/* box border */
+.box-bdr {
+    border: 1px solid $colorMedium;
+}
+.box-bdr2 {
+    border: 1px solid #999;
+}
+/* box background color */
+.box-bgcolor {
+    background: #fff;
+}
+.box-rounded {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}

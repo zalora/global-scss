@@ -1,0 +1,46 @@
+//-------------------------------------
+// Social button bars and share buttons of all kinds
+//-------------------------------------
+
+//-------------------------------------
+// <div class="social-buttons">
+//   <h6 class="social-buttons__label">share on</h6>
+//   <a class="social-buttons_button">
+//     <i class="icon_facebook"></i>
+//   </a>
+// </div>
+//-------------------------------------
+.social-buttons {
+    &.social-buttons--circles {
+        a {
+            @include transition(background-color .2s);
+            padding: 5px;
+            border-radius: 999px;
+            border: 1px solid $colorMedium;
+            width: 20px;
+            height: 18px;
+            text-align: center;
+            margin-left: 0;
+            margin-right: $spaceSmall;
+            padding-top: 7px;
+
+            &:hover {
+                background-color: $colorMedium;
+            }
+        }
+    }
+
+    h6 {
+        margin: 0;
+        margin-right: 10px;
+        font-weight: 400;
+    }
+
+    h6,
+    a {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    a { margin-left: 5px }
+}

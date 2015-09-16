@@ -1,0 +1,22 @@
+//-------------------------------------
+// Title bars
+//-------------------------------------
+
+//-------------------------------------
+// <div class="title-bar">
+//   Title
+// </div>
+//-------------------------------------
+.title-bar {
+    line-height: 1;
+    background-color: $colorMedium;
+    color: $colorDarkPrimary;
+    text-transform: uppercase;
+
+    h1, h2, h3 {
+        margin: 0;
+        font-size: 13px;
+        line-height: 1;
+        font-weight: 400;
+    }
+}

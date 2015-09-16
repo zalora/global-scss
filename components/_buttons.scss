@@ -1,0 +1,155 @@
+//-------------------------------------
+// Button Definitions
+//-------------------------------------
+
+/*doc
+---
+title: Button
+name: button
+category: basics
+---
+```html_example
+    <button class="btn">Hello</button>
+```
+*/
+.btn {
+    @include transition(background-color .3s, color .2s);
+    color: $colorLightPrimary;
+    background-color: $colorDarkPrimary;
+    border: 2px solid;
+    border-color: $colorDarkPrimary;
+
+    box-sizing: border-box;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 12px;
+    font-size: 12px;
+    line-height: 10px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    letter-spacing: 1px;
+
+    &:hover {
+        text-decoration: none;
+        color: $colorDarkPrimary;
+        background-color: $colorLightPrimary;
+    }
+
+    //-------------------------------------
+    // Colors
+    //-------------------------------------
+    &.btn--secondary {
+        background-color: $colorLightPrimary;
+        color: $colorDarkPrimary;
+        border-color: $colorDarkPrimary;
+
+        &:hover {
+            background-color: $colorDarkPrimary;
+            color: $colorLightPrimary;
+            border-color: $colorDarkPrimary;
+        }
+    }
+
+    &.btn--special {
+        background-color: $colorDarkSecondary;
+        color: white;
+        border-color: $colorDarkSecondary;
+
+        &:hover {
+            background-color: $colorLightPrimary;
+            color: $colorDarkSecondary;
+        }
+    }
+
+    &.btn--facebook {
+        background-color: $colorFacebook;
+        background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMiIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDIyIDQwIj48cGF0aCBmaWxsPSJ3aGl0ZSIgZD0iTTIwLjgxMi4wMDhMMTUuNjI1IDBDOS43OTcgMCA2LjAzIDMuODY0IDYuMDMgOS44NDR2NC41NEguODE2Yy0uNDUgMC0uODE1LjM2NS0uODE1LjgxNXY2LjU3NmMwIC40NS4zNjUuODE1LjgxNS44MTVINi4wM3YxNi41OTVjMCAuNDUuMzY1LjgxNS44MTYuODE1aDYuODA1Yy40NSAwIC44MTYtLjM2NS44MTYtLjgxNVYyMi41OWg2LjA5OGMuNDUgMCAuODE2LS4zNjQuODE2LS44MTRsLjAwMy02LjU3N2MwLS4yMTctLjA4Ny0uNDI0LS4yNC0uNTc3LS4xNTItLjE1NC0uMzYtLjI0LS41NzYtLjI0aC02LjF2LTMuODQ4YzAtMS44NS40NC0yLjc4OCAyLjg1LTIuNzg4aDMuNDk0Yy40NTIgMCAuODE2LS4zNjYuODE2LS44MTZWLjgyNWMwLS40NS0uMzY0LS44MTUtLjgxNC0uODE2eiIvPjwvc3ZnPg==");
+        background-repeat: no-repeat;
+        background-position: 9px center;
+        background-size: 16px 16px;
+        border-color: $colorFacebook;
+        padding-left: 36px;
+        position: relative;
+
+        &:hover {
+            color: $colorLightPrimary;
+            background-color: $colorFacebookHover;
+            border-color: $colorFacebookHover;
+        }
+    }
+
+    //-------------------------------------
+    // Sizes
+    //-------------------------------------
+    &.btn--tiny {
+        padding: 6px;
+        border: 1px solid;
+        font-size: 10px;
+    }
+
+    &.btn--medium {
+        padding: 18px;
+
+        &.btn--facebook {
+            padding-left: 46px;
+            background-position: 12px center;
+            background-size: 24px 24px;
+        }
+    }
+
+    &.btn--large  { padding: 24px }
+
+    // Layout variations
+    &.btn--fluid  { width: 100% }
+    &.btn--cta {
+        &:after { content: " >" }
+    }
+
+    //-------------------------------------
+    // States
+    //-------------------------------------
+    &.js-loading {
+        background-color: $colorDarkPrimary;
+
+        span {
+            @include animation(fadeIn .5s .5s backwards);
+            display: block;
+            width: 24px;
+            height: 24px;
+            background: url('/images/local/icons/z_ajax.gif') center no-repeat;
+            background-size: 24px;
+            margin: -7px auto;
+        }
+    }
+}
+
+//-------------------------------------
+// Button Input Group
+//-------------------------------------
+.btn-input-group {
+    .btn-input-group__input,
+    .btn-input-group__btn { float: left }
+
+    .btn-input-group__input {
+        width: 60%;
+
+        input {
+            font-size: 12px;
+            padding: 11px;
+            line-height: 1;
+        }
+    }
+
+    .btn-input-group__btn {
+        width: 40%;
+
+        .btn { width: 100% }
+    }
+}

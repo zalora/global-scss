@@ -1,0 +1,95 @@
+//-------------------------------------
+// Forms
+//-------------------------------------
+input,
+button,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    outline: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: $colorLightPrimary;
+}
+
+/* placeholder attribute */
+@include placeholder {
+    font-style: normal;
+    color: #ccc;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+    @include transition(border .3s);
+    border: 1px solid $colorMedium;
+    padding: 8px;
+    width: 100%;
+
+    &:focus {
+      border: 1px solid $colorHighlightPositive;
+    }
+
+    &.error {
+      border: 1px solid $colorHighlightError;
+      background: url('../../../images/local/checkout/red_error_icon.png') no-repeat right 10px center $colorLightPrimary;
+    }
+}
+
+label {
+    display: block;
+}
+
+.form__group {
+    margin-bottom: 30px;
+    position: relative;
+
+    &:last-child {
+      margin: 0;
+    }
+}
+
+.form-stacked {
+
+    .form-stacked__group {
+      @extend .form__group
+    }
+
+    label {
+         margin-bottom: 5px;
+    }
+
+    .form-stacked__input {
+        &.fluid {
+            width: 100%;
+        }
+    }
+
+    .form-stacked__half {
+        width: 48%;
+        float: left;
+        margin-right: 4%;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+
+.form-horizontal {
+
+    .form-horizontal__group {
+        @extend .form__group
+    }
+
+    .form-horizontal__input {
+        &.fluid {
+            width: 100%;
+        }
+    }
+}

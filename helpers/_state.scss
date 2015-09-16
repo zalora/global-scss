@@ -1,0 +1,79 @@
+/* ==========================================================================
+   States utilities
+   ========================================================================== */
+
+/**
+ * State rules
+ */
+
+.s-error {
+  .msgBox, &.msgBox {
+    background-color: #00c7b4;
+    color: white;
+    font-weight: bold;
+  }
+}
+
+.s-success {
+  color: white;
+  .msgBox, &.msgBox {
+    background-color: $colorHighlightPositive;
+  }
+}
+
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+
+.s-hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+
+.s-visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  &.focusable {
+    &:active, &:focus {
+      clip: auto;
+      height: auto;
+      margin: 0;
+      overflow: visible;
+      position: static;
+      width: auto;
+    }
+  }
+}
+
+/* Extends the .s-visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+
+/* Hide visually and from screenreaders, but maintain layout */
+
+.s-invisible {
+  visibility: hidden;
+}
+
+.hidden {
+  display: none;
+  &:hover {
+    display: block;
+  }
+}
+
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: block !important;
+}
+
+.invisible {
+  visibility: hidden;
+}
