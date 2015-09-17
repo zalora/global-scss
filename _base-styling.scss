@@ -71,9 +71,6 @@ a {
     // Links on dark backgrounds
     &.a-white {
         color: white;
-
-        &:hover,
-        &:focus { color: $colorLightSecondary }
     }
 }
 
