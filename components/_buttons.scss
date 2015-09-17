@@ -8,6 +8,9 @@ title: Button
 name: button
 category: basics
 ---
+
+A button is an awesome thing to get in trouble with. Hi Winn.
+
 ```html_example
     <button class="btn">Hello</button>
 ```
@@ -42,9 +45,18 @@ category: basics
         background-color: $colorLightPrimary;
     }
 
-    //-------------------------------------
-    // Colors
-    //-------------------------------------
+/*doc
+---
+title: Button Colors
+name: button-variations
+category: basics
+---
+```html_example
+<button class="btn btn--secondary">Secondary</button>
+<button class="btn btn--special">Special</button>
+<button class="btn btn--facebook">Facebook</button>
+```
+*/
     &.btn--secondary {
         background-color: $colorLightPrimary;
         color: $colorDarkPrimary;
@@ -85,9 +97,18 @@ category: basics
         }
     }
 
-    //-------------------------------------
-    // Sizes
-    //-------------------------------------
+/*doc
+---
+title: Button Sizes
+name: button-sizes
+category: basics
+---
+```html_example
+<button class="btn btn--small">Small</button>
+<button class="btn btn--medium">Medium</button>
+<button class="btn btn--medium btn--fluid">Medium & Fluid width</button>
+```
+*/
     &.btn--tiny {
         padding: 6px;
         border: 1px solid;
