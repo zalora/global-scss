@@ -6,16 +6,25 @@ small, .small {
 
 .container {
   margin: 0 auto;
-  width: 996px;
+
   &:before {
     display: table;
     content: " ";
   }
+
   &:after {
     display: table;
     content: " ";
     clear: both;
   }
+}
+
+/* ====== Floats ====== */
+.lfloat {
+    float:left;
+}
+.rfloat {
+    float:right;
 }
 
 /* ====== Form styles ===== */
@@ -269,11 +278,11 @@ input:invalid {
 }
 
 .success {
-  color: #6c8516;
+  color: $colorHighlightPositive;
 }
 
 .error {
-  /* color: #820000; */
+  color: $colorHighlightNegative;
 }
 
 /* border styles */
