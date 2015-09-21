@@ -39,6 +39,10 @@ textarea {
       border: 1px solid $colorHighlightError;
       background: url('../../../images/local/checkout/red_error_icon.png') no-repeat right 10px center $colorLightPrimary;
     }
+
+    &.disabled {
+        opacity: .6;
+    }
 }
 
 label {
