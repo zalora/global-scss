@@ -73,10 +73,19 @@
     animation: #{$str};
 }
 
-/* Input placeholder */
+// Input placeholder
 @mixin placeholder {
     ::-webkit-input-placeholder {@content}
     :-moz-placeholder           {@content}
     ::-moz-placeholder          {@content}
     :-ms-input-placeholder      {@content}
+}
+
+// Clearfix
+@mixin clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
 }
