@@ -26,7 +26,7 @@ input[type="email"],
 input[type="password"],
 select,
 textarea {
-    @include transition(border .3s);
+    transition: border .3s;
     border: 1px solid $colorMedium;
     padding: 8px;
     width: 100%;
