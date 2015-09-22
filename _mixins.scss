@@ -10,6 +10,12 @@
     }
 }
 
+@mixin media-height($breakpoint) {
+    @media screen and (min-height: $breakpoint) {
+        @content;
+    }
+}
+
 // generic transform
 @mixin transform($transforms) {
      -moz-transform: $transforms;
