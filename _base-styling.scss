@@ -15,7 +15,19 @@ body {
     margin: 0;
 }
 
-// Headlines
+/*doc
+---
+title: Headlines
+name: headlines
+category: typography
+---
+
+```html_example
+    <h1>Headline Level 1</h1>
+    <h2>Headline Level 2</h2>
+    <h3>Headline Level 3</h3>
+```
+*/
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: inherit;
