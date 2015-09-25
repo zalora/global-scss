@@ -2,11 +2,29 @@
 // Title bars
 //-------------------------------------
 
-//-------------------------------------
-// <div class="title-bar">
-//   Title
-// </div>
-//-------------------------------------
+/*doc
+---
+title: Titlebar
+name: titlebar
+category: components
+---
+
+Titlebars
+
+This component is used in many areas of the shop, for example:
+
+- On my account pages
+- To host breadcrumps
+- In the catalog to show the number of search results
+
+Titlebars are used in conjunction with the [spacing helper classes](/components/desktop/spacing-helpers.html).
+
+```html_example
+<div class="title-bar pal">
+    Hi there! I'm a title-bar.
+</div>
+```
+*/
 .title-bar {
     line-height: 1;
     background-color: $colorMedium;

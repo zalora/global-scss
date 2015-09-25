@@ -6,8 +6,11 @@
 ---
 title: Price Box
 name: price-box
-category: elements
+category: components
 ---
+
+Price boxes are a common way to display a price of an item. Note the containers for reduced and special prices:
+
 ```html_example
 <div class="price-box">
   <div class="price-box__regular-price">
@@ -21,6 +24,20 @@ category: elements
   </div>
 </div>
 ```
+
+This also works really nice with the [font size helper classes](/components/desktop/font-size-helpers.html):
+
+```html_example
+<div class="price-box fsxxl">
+  <div class="price-box__old-price">
+    <span>$80</span>
+  </div>
+  <div class="price-box__special-price">
+    <span>$10</span>
+  </div>
+</div>
+```
+
 */
 .price-box {
     .price-box__old-price {
