@@ -129,6 +129,11 @@ input:invalid {
   margin-left: 13px;
 }
 
+.ui-listUnstyled {
+  list-style: none;
+  padding-left: 0;
+}
+
 /* inline-block and block element */
 
 .ui-inlineBlock {
