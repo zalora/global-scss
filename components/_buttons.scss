@@ -115,7 +115,7 @@ category: buttons
 And then there are Call-to-action buttons, called `fluid` buttons. They take the full width of their parent contrainer.
 
 ```html_example
-<div style="width: 50%">
+<div style="width: 70%">
     <button class="btn btn--medium btn--fluid">I'm super fluid bro!</button>
 </div>
 ```
@@ -124,8 +124,8 @@ And then there are Call-to-action buttons, called `fluid` buttons. They take the
 Maximize user engagement with a tiny direction arrow!
 
 ```html_example
-<div style="width: 50%">
-    <button class="btn btn--medium btn--fluid btn--cta">We just know you want this</button>
+<div style="width: 70%">
+    <button class="btn btn--medium btn--fluid btn--cta">Tap me</button>
 </div>
 ```
 
@@ -200,7 +200,7 @@ category: buttons
 Input groups consist of a text input to the left and button directly next to it, with the same height.
 
 ```html_example
-<div class="btn-input-group" style="width: 50%;">
+<div class="btn-input-group">
     <input type="text" class="btn-input-group__input" placeholder="Hi there!" />
     <button class="btn btn-input-group__btn">Hook me up</button>
 </div>
