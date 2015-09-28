@@ -181,7 +181,22 @@ input:invalid {
 
 /* ====== Typography ====== */
 
-// Font sizes
+/*doc
+---
+title: Font size helpers
+name: fontsize-helpers
+category: helpers
+---
+
+These are css helper classes ready to use for layouting directly in html.
+
+```html_example
+<p class="fss">Small</p>
+<p class="fsl">Medium</p>
+<p class="fsxl">Large</p>
+<p class="fssxxl">Extra Large</p>
+```
+*/
 .fsxs,
 .fss,
 .fsm    { font-size: $fontsizeS }
@@ -191,8 +206,21 @@ input:invalid {
 .fsxxl  { font-size: $fontsizeXXL }
 .fsxxxl { font-size: $fontsizeXXXL }
 
-/* Font Weight */
+/*doc
+---
+title: Stylisation Helpers
+name: style-helpers
+category: helpers
+---
 
+Helpers to style the appearance of text
+
+```html_example
+<p class="strong">Strong</p>
+<p class="normal">Normal</p>
+<p class="italic">Italic</p>
+```
+*/
 .strong {
   font-weight: bold;
 }
