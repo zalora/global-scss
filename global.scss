@@ -15,14 +15,6 @@
 
 
 //-------------------------------------
-// Helper classes
-//-------------------------------------
-@import "helpers/spacing";
-@import "helpers/state";
-@import "helpers/ui";
-@import "helpers/grid";
-
-//-------------------------------------
 // Components
 //-------------------------------------
 @import "components/buttons";
@@ -32,3 +24,11 @@
 @import "components/social";
 @import "components/price";
 @import "components/media";
+
+//-------------------------------------
+// Helper classes
+//-------------------------------------
+@import "helpers/spacing";
+@import "helpers/state";
+@import "helpers/ui";
+@import "helpers/grid";

@@ -47,6 +47,18 @@ This gives a button the shape and coolness it deserves for being a button in a Z
         background-color: $colorLightPrimary;
     }
 
+    &.btn--inverted {
+        background-color: $colorLightPrimary;
+        color: $colorDarkPrimary;
+        border-color: $colorLightPrimary;
+
+        &:hover {
+            background-color: transparent;
+            color: $colorLightPrimary;
+            border-color: $colorLightPrimary;
+        }
+    }
+
 /*doc
 ---
 title: Button Colours
@@ -55,12 +67,23 @@ category: buttons
 ---
 ```html_example
 <button class="btn btn--secondary">Secondary</button>
+<button class="btn btn--tertiary">Tertiary</button>
 <button class="btn btn--special">Special</button>
 <button class="btn btn--facebook">Facebook</button>
 ```
+
+### On dark background
+
+```html_example
+<div style="background-color: black; padding: 50px;">
+    <button class="btn btn--inverted">Primary button</button>
+    <button class="btn btn--secondary btn--inverted">Secondary button</button>
+</div>
+```
+
 */
     &.btn--secondary {
-        background-color: $colorLightPrimary;
+        background-color: transparent;
         color: $colorDarkPrimary;
         border-color: $colorDarkPrimary;
 
@@ -68,6 +91,28 @@ category: buttons
             background-color: $colorDarkPrimary;
             color: $colorLightPrimary;
             border-color: $colorDarkPrimary;
+        }
+
+        &.btn--inverted {
+            color: $colorLightPrimary;
+            border-color: $colorLightPrimary;
+
+            &:hover {
+                background-color: $colorLightPrimary;
+                color: $colorDarkPrimary;
+                border-color: $colorLightPrimary;
+            }
+        }
+    }
+
+    &.btn--tertiary {
+        background-color: $colorDarkTertiary;
+        color: $colorLightPrimary;
+        border-color: transparent;
+
+        &:hover {
+            background-color: $colorLightPrimary;
+            color: $colorDarkPrimary;
         }
     }
 
@@ -99,6 +144,7 @@ category: buttons
         }
     }
 
+
 /*doc
 ---
 title: Button Sizes
@@ -109,6 +155,7 @@ category: buttons
 <button class="btn btn--tiny">Tiny</button>
 <button class="btn btn--regular">Regular</button>
 <button class="btn btn--medium">Medium</button>
+<button class="btn btn--large">Large</button>
 ```
 
 ### CTAs
@@ -147,7 +194,10 @@ Maximize user engagement with a tiny direction arrow!
         }
     }
 
-    &.btn--large  { padding: 24px }
+    &.btn--large  {
+        padding: 24px;
+        font-size: $fontsizeL;
+    }
 
     // Layout variations
     &.btn--fluid  { width: 100% }

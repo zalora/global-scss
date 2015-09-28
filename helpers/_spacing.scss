@@ -119,7 +119,11 @@ s,m,l,n = small(5px),medium(10px),large(20px),none(0px)
 }
 
 .mtxl, .mvxl, .maxl {
-  margin-top: 30px;
+  margin-top: $spaceXLarge;
+}
+
+.mtxxl, .mvxxl, .maxxl {
+  margin-top: $spaceXXLarge;
 }
 
 .mrs, .mhs, .mas {
@@ -136,7 +140,11 @@ s,m,l,n = small(5px),medium(10px),large(20px),none(0px)
 }
 
 .mrxl, .mhxl, .maxl {
-  margin-right: 30px;
+  margin-right: $spaceXLarge;
+}
+
+.mrxxl, .mhxxl, .maxxl {
+  margin-right: $spaceXLarge;
 }
 
 .mbs, .mvs, .mas {
@@ -152,8 +160,12 @@ s,m,l,n = small(5px),medium(10px),large(20px),none(0px)
   margin-bottom: $spaceLarge;
 }
 
+.mbxxl, .mvxxl, .maxxl {
+  margin-bottom: $spaceXXLarge;
+}
+
 .mbxl, .mvxl, .maxl {
-  margin-bottom: 30px;
+  margin-bottom: $spaceXLarge;
 }
 
 .mls, .mhs, .mas {
