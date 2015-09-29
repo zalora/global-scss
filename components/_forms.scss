@@ -26,7 +26,6 @@ input[type="email"],
 input[type="password"],
 select,
 textarea {
-    -webkit-appearance: none;
     transition: border .3s;
     border: 1px solid $colorMedium;
     border-radius: 0;
@@ -45,6 +44,13 @@ textarea {
     &.disabled {
         opacity: .6;
     }
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    -webkit-appearance: none;
 }
 
 label {
