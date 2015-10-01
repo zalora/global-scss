@@ -197,10 +197,8 @@ These are css helper classes ready to use for layouting directly in html.
 <p class="fsxxl">Extra Large</p>
 ```
 */
-.fsxs,
-.fss,
-.fsm    { font-size: $fontsizeS }
-
+.fss    { font-size: $fontsizeS }
+.fsn    { font-size: $fontsizeM }
 .fsl    { font-size: $fontsizeL }
 .fsxl   { font-size: $fontsizeXL }
 .fsxxl  { font-size: $fontsizeXXL }
@@ -222,11 +220,11 @@ Helpers to style the appearance of text
 ```
 */
 .strong {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .normal {
-  font-weight: normal;
+  font-weight: 400;
 }
 
 /* Font Style */
