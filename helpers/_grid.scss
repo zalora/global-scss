@@ -5,6 +5,8 @@ name: headlines
 category: Grid
 ---
 
+We use a simple grid system with up to 6 columns:
+
 ```html_example
 <div class="container">
   <div class="unit size1of1">Full Width</div>
@@ -19,11 +21,42 @@ category: Grid
   <div class="unit size1of4">Quarters</div>
   <div class="unit size1of4">Quarters</div>
   <div class="unit size1of4">Quarters</div>
+
+  <div class="unit size1of5">Fifths</div>
+  <div class="unit size1of5">Fifths</div>
+  <div class="unit size1of5">Fifths</div>
+  <div class="unit size1of5">Fifths</div>
+  <div class="unit size1of5">Fifths</div>
+
+  <div class="unit size1of6">Sixths</div>
+  <div class="unit size1of6">Sixths</div>
+  <div class="unit size1of6">Sixths</div>
+  <div class="unit size1of6">Sixths</div>
+  <div class="unit size1of6">Sixths</div>
+  <div class="unit size1of6">Sixths</div>
 </div>
 ```
 > txtCenter grid-example
+
+### Go bananas with combinations!
+
+```html_example
+<div class="container">
+  <div class="unit size1of3">1 of 3</div>
+  <div class="unit size2of3">2 of 3</div>
+
+  <div class="unit size1of2">1 of 2</div>
+  <div class="unit size1of4">1 of 4</div>
+  <div class="unit size1of4">1 of 4</div>
+
+  <div class="unit size2of5">2 of 5</div>
+  <div class="unit size3of5">3 of 3</div>
+</div>
+```
+> txtCenter grid-example
+
 */
-.line, .lastUnit {
+.line {
   overflow: hidden;
   *overflow: visible;
   *zoom: 1;
@@ -87,12 +120,4 @@ category: Grid
 
 .size1of6 {
   width: 16.667%;
-}
-
-.lastUnit {
-  float: none;
-  width: auto;
-  _position: relative;
-  _left: -3px;
-  _margin-right: -3px;
 }

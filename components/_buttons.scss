@@ -16,6 +16,7 @@ This gives a button the shape and coolness it deserves for being a button in a Z
 ```html_example
     <button class="btn">Hello</button>
 ```
+> example-container
 */
 .btn {
     transition: background-color .3s, color .2s;
@@ -71,6 +72,7 @@ category: Buttons
 <button class="btn btn--special">Special</button>
 <button class="btn btn--facebook">Facebook</button>
 ```
+> example-container
 
 ### On dark background
 
@@ -157,24 +159,23 @@ category: Buttons
 <button class="btn btn--medium">Medium</button>
 <button class="btn btn--large">Large</button>
 ```
+> example-container
 
 ### CTAs
 And then there are Call-to-action buttons, called `fluid` buttons. They take the full width of their parent contrainer.
 
 ```html_example
-<div style="width: 70%">
-    <button class="btn btn--medium btn--fluid">I'm super fluid bro!</button>
-</div>
+<button class="btn btn--medium btn--fluid">I'm super fluid bro!</button>
 ```
+> example-container
 
 #### More engagement
 Maximize user engagement with a tiny direction arrow!
 
 ```html_example
-<div style="width: 70%">
-    <button class="btn btn--medium btn--fluid btn--cta">Tap me</button>
-</div>
+<button class="btn btn--medium btn--fluid btn--cta">Tap me</button>
 ```
+> example-container
 
 
 */

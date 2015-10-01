@@ -19,6 +19,25 @@ small, .small {
   }
 }
 
+/*doc
+---
+title: Basic layouting
+name: layout-helpers
+category: Helpers
+---
+
+If you have to move stuff around, just apply some of your favorite layout helpers:
+
+```html_example
+<div class="container">
+  <span class="lfloat">I'm floating left</span>
+  <span class="rfloat">More oldschool - let's float to the right</span>
+</div>
+```
+> example-container
+
+*/
+
 /* ====== Floats ====== */
 .lfloat {
     float:left;
@@ -33,11 +52,25 @@ input:invalid {
   background: #fff;
 }
 
-/* ====== UI styles ====== */
+/*doc
+---
+title: Adding borders to things
+name: fontsize-helpers
+category: Helpers
+---
 
-/* Box Styles */
+Use this with caution, but we have helpers to add borders to things:
 
-/* Borders */
+```html_example
+<p class="ui-border">I have a border around me</p>
+<p class="ui-borderLeft">I have a border to the left</p>
+<p class="ui-borderTop">I have a border on top if me</p>
+<p class="ui-borderRight">I have a border to my right</p>
+<p class="ui-borderBottom">Sitting on borders is so much fun</p>
+```
+> example-container
+
+*/
 
 .ui-border {
   border: 1px solid $colorMedium;
@@ -58,12 +91,6 @@ input:invalid {
 .ui-borderRight {
   border-right: 1px solid $colorMedium;
 }
-
-/* dotted border */
-
-/* dashed border */
-
-/* Default Grid */
 
 .ui-grid {
   border: 0;
@@ -89,15 +116,6 @@ input:invalid {
   }
   .vBot {
     vertical-align: bottom;
-  }
-  .hLeft {
-    text-align: left;
-  }
-  .hCent {
-    text-align: center;
-  }
-  .hRght {
-    text-align: right;
   }
 }
 
@@ -183,19 +201,22 @@ input:invalid {
 
 /*doc
 ---
-title: Font size helpers
+title: Font sizes
 name: fontsize-helpers
-category: helpers
+category: Helpers
 ---
 
 These are css helper classes ready to use for layouting directly in html.
 
 ```html_example
 <p class="fss">Small</p>
+<p class="fsn">Normal (this is the body font-size too!)</p>
 <p class="fsl">Medium</p>
 <p class="fsxl">Large</p>
 <p class="fsxxl">Extra Large</p>
 ```
+> example-container
+
 */
 .fss    { font-size: $fontsizeS }
 .fsn    { font-size: $fontsizeM }
@@ -206,9 +227,9 @@ These are css helper classes ready to use for layouting directly in html.
 
 /*doc
 ---
-title: Stylisation Helpers
+title: Stylisation
 name: style-helpers
-category: helpers
+category: Helpers
 ---
 
 Helpers to style the appearance of text
@@ -217,7 +238,15 @@ Helpers to style the appearance of text
 <p class="strong">Strong</p>
 <p class="normal">Normal</p>
 <p class="italic">Italic</p>
+<p class="txtUpper">All Caps</p>
+<p class="txtLower">LOWERCASE</p>
+<p class="txtCenter">Centered</p>
+<p class="txtRight">Right aligned</p>
+<p class="success">Yay!</p>
+<p class="error">Nooo :/</p>
 ```
+> example-container
+
 */
 .strong {
   font-weight: 700;
@@ -360,30 +389,6 @@ Helpers to style the appearance of text
 
 .ui-page-bg {
   background-color: #f6f6f6;
-}
-
-/* Links */
-
-/* Font color */
-
-.txtLight {
-  color: #888;
-}
-
-.txtGreyLight {
-  color: #6c6c6c;
-}
-
-.txtDark, .txtBlack {
-  color: #000;
-}
-
-.txtGray {
-  color: #666;
-}
-
-.txtUpper {
-  text-transform: uppercase;
 }
 
 /* placeholder attribute */
