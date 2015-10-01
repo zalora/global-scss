@@ -15,19 +15,6 @@ body {
     margin: 0;
 }
 
-/*doc
----
-title: Headlines
-name: headlines
-category: typography
----
-
-```html_example
-    <h1>Headline Level 1</h1>
-    <h2>Headline Level 2</h2>
-    <h3>Headline Level 3</h3>
-```
-*/
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: inherit;
@@ -63,7 +50,6 @@ h4,
 h5, h6,
 .h5,.h6 { font-size: $fontsizeM }
 
-// Links
 a {
     color: $colorDarkPrimary;
     text-decoration: none;

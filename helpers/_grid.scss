@@ -1,7 +1,33 @@
-/*
-    link zu oocss
-*/
+/*doc
+---
+title: Grid
+name: headlines
+category: Grid
+---
 
+```html_example
+<div class="container">
+  <div class="unit size1of1">Full Width</div>
+  <div class="unit size1of2">Halfs</div>
+  <div class="unit size1of2">Halfs</div>
+
+  <div class="unit size1of3">Thirds</div>
+  <div class="unit size1of3">Thirds</div>
+  <div class="unit size1of3">Thirds</div>
+
+  <div class="unit size1of4">Quarters</div>
+  <div class="unit size1of4">Quarters</div>
+  <div class="unit size1of4">Quarters</div>
+  <div class="unit size1of4">Quarters</div>
+</div>
+```
+> example class names
+
+```html_example
+blablab
+```
+
+*/
 .line, .lastUnit {
   overflow: hidden;
   *overflow: visible;
