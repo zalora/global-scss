@@ -205,21 +205,6 @@ Maximize user engagement with a tiny direction arrow!
         &:after { content: " >" }
     }
 
-/*doc
----
-title: Button States
-name: button-4-states
-category: Buttons
----
-
-Simply drop in a class of `js-loading` along with `<span/>` element and you get this fancy spinner.
-
-```html_example
-<button class="btn js-loading">
-    <span>I'm loading</span>
-</button>
-```
-*/
     &.js-loading {
         background-color: $colorDarkPrimary;
 
