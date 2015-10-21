@@ -15,6 +15,10 @@ textarea {
     background: $colorLightPrimary;
 }
 
+select {
+    height: 38px;
+}
+
 /* placeholder attribute */
 @include placeholder {
     font-style: normal;
