@@ -33,7 +33,6 @@ textarea {
     transition: border .3s;
     border: 1px solid $colorMedium;
     border-radius: 0;
-    padding: 8px;
     width: 100%;
 
     &:focus {
@@ -55,6 +54,7 @@ input[type="email"],
 input[type="password"],
 textarea {
     -webkit-appearance: none;
+    padding: 8px;
 }
 
 label {
