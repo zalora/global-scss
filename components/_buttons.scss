@@ -60,6 +60,10 @@ This gives a button the shape and coolness it deserves for being a button in a Z
         }
     }
 
+    &:disabled {
+        color: $colorDarkDisabled;
+    }
+
 /*doc
 ---
 title: Button Colours
@@ -105,6 +109,10 @@ category: Buttons
                 border-color: $colorLightPrimary;
             }
         }
+
+        &:disabled {
+            color: $colorDarkDisabled;
+        }
     }
 
     &.btn--tertiary {
@@ -116,6 +124,10 @@ category: Buttons
             background-color: $colorLightPrimary;
             color: $colorDarkPrimary;
         }
+
+        &:disabled {
+            color: $colorDarkDisabled;
+        }
     }
 
     &.btn--special {
@@ -126,6 +138,10 @@ category: Buttons
         &:hover {
             background-color: $colorLightPrimary;
             color: $colorDarkSecondary;
+        }
+
+        &:disabled {
+            color: $colorLightDisabled;
         }
     }
 
