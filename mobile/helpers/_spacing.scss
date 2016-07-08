@@ -105,6 +105,10 @@ s,m,l,n = small(5px),medium(10px),large(20px),none(0px)
   margin-bottom: 0px;
 }
 
+.mtxs, .mvxs, .maxs {
+  margin-top: $spaceXSmall;
+}
+
 .mts, .mvs, .mas {
   margin-top: $spaceSmall;
 }
@@ -120,6 +124,10 @@ s,m,l,n = small(5px),medium(10px),large(20px),none(0px)
 
 .mtxl, .mvxl, .maxl {
   margin-top: $spaceXLarge;
+}
+
+.mrxs, .mhxs, .maxs {
+  margin-right: $spaceXSmall;
 }
 
 .mrs, .mhs, .mas {
@@ -143,6 +151,10 @@ s,m,l,n = small(5px),medium(10px),large(20px),none(0px)
   margin-right: $spaceXLarge;
 }
 
+.mbxs, .mvxs, .maxs {
+  margin-bottom: $spaceXSmall;
+}
+
 .mbs, .mvs, .mas {
   margin-bottom: $spaceSmall;
 }
@@ -158,6 +170,10 @@ s,m,l,n = small(5px),medium(10px),large(20px),none(0px)
 
 .mbxl, .mvxl, .maxl {
   margin-bottom: $spaceXLarge;
+}
+
+.mlxs, .mhxs, .maxs {
+  margin-left: $spaceXSmall;
 }
 
 .mls, .mhs, .mas {
