@@ -1,0 +1,12 @@
+
+.price-box {
+  color: $colorDarkPrimary;
+    .price-box__old-price {
+      color: $colorDarkSecondary;
+      text-decoration: line-through;
+    }
+
+    .price-box__special-price {
+      color: $colorNegativeDark;
+    }
+}

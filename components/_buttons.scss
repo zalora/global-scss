@@ -48,6 +48,11 @@ This gives a button the shape and coolness it deserves for being a button in a Z
         background-color: $colorLightPrimary;
     }
 
+    &.btn-regular {
+        text-transform: none;
+        letter-spacing: 0px;
+    }
+
     &.btn--inverted {
         background-color: $colorLightPrimary;
         color: $colorDarkPrimary;
