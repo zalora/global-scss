@@ -26,11 +26,10 @@ This gives a button the shape and coolness it deserves for being a button in a Z
     border-color: $colorDarkPrimary;
 
     box-sizing: border-box;
-    text-transform: uppercase;
+    text-transform: none;
     display: inline-block;
     padding: 12px;
     font-size: 12px;
-    line-height: 10px;
     text-align: center;
     white-space: nowrap;
     vertical-align: middle;
@@ -40,7 +39,7 @@ This gives a button the shape and coolness it deserves for being a button in a Z
         -ms-user-select: none;
     user-select: none;
     background-image: none;
-    letter-spacing: 1px;
+    letter-spacing: 0.75px;
 
     &:hover {
         text-decoration: none;
@@ -145,23 +144,6 @@ category: Buttons
         }
     }
 
-    &.btn--facebook {
-        background-color: $colorFacebook;
-        background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMiIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDIyIDQwIj48cGF0aCBmaWxsPSJ3aGl0ZSIgZD0iTTIwLjgxMi4wMDhMMTUuNjI1IDBDOS43OTcgMCA2LjAzIDMuODY0IDYuMDMgOS44NDR2NC41NEguODE2Yy0uNDUgMC0uODE1LjM2NS0uODE1LjgxNXY2LjU3NmMwIC40NS4zNjUuODE1LjgxNS44MTVINi4wM3YxNi41OTVjMCAuNDUuMzY1LjgxNS44MTYuODE1aDYuODA1Yy40NSAwIC44MTYtLjM2NS44MTYtLjgxNVYyMi41OWg2LjA5OGMuNDUgMCAuODE2LS4zNjQuODE2LS44MTRsLjAwMy02LjU3N2MwLS4yMTctLjA4Ny0uNDI0LS4yNC0uNTc3LS4xNTItLjE1NC0uMzYtLjI0LS41NzYtLjI0aC02LjF2LTMuODQ4YzAtMS44NS40NC0yLjc4OCAyLjg1LTIuNzg4aDMuNDk0Yy40NTIgMCAuODE2LS4zNjYuODE2LS44MTZWLjgyNWMwLS40NS0uMzY0LS44MTUtLjgxNC0uODE2eiIvPjwvc3ZnPg==");
-        background-repeat: no-repeat;
-        background-position: 9px center;
-        background-size: 16px 16px;
-        border-color: $colorFacebook;
-        padding-left: 36px;
-        position: relative;
-
-        &:hover {
-            color: $colorLightPrimary;
-            background-color: $colorFacebookHover;
-            border-color: $colorFacebookHover;
-        }
-    }
-
 
 /*doc
 ---
@@ -204,11 +186,6 @@ Maximize user engagement with a tiny direction arrow!
     &.btn--medium {
         padding: 18px;
 
-        &.btn--facebook {
-            padding-left: 46px;
-            background-position: 12px center;
-            background-size: 24px 24px;
-        }
     }
 
     &.btn--large  {

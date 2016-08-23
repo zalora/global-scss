@@ -5,20 +5,20 @@
 .pagination li {
   display: inline-block;
   font-size: $fontsizeS;
-  background-color: #fff;
+  background-color: $colorLightPrimary;
 }
 .pagination a,
 .pagination .current {
   display: block;
   padding: 6px 12px 6px;
-  border: 1px solid #ddd;
+  border: 1px solid $colorMedium;
 }
 .pagination .current {
   border: 1px solid $colorDarkPrimary;
 }
 
 .pagination .disable {
-  color: #ddd;
+  color: $colorMedium;
 }
 
 .pagination .previous {
