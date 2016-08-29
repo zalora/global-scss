@@ -1,0 +1,260 @@
+//-------------------------------------
+// Button Definitions
+//-------------------------------------
+
+/*doc
+---
+title: Button
+name: button-1
+category: Buttons
+---
+
+The base class for a button is `'.btn'`.
+
+This gives a button the shape and coolness it deserves for being a button in a ZALORA project.
+
+```html_example
+    <button class="btn">Hello</button>
+```
+> example-container
+*/
+.btn {
+    transition: background-color .3s, color .2s;
+    color: $colorLightPrimary;
+    background-color: $colorDarkPrimary;
+    border: 1px solid;
+    border-color: $colorDarkPrimary;
+
+    box-sizing: border-box;
+    text-transform: none;
+    display: inline-block;
+    padding: 12px;
+    font-size: 12px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    letter-spacing: 0.75px;
+
+    &:hover {
+        text-decoration: none;
+        color: $colorDarkPrimary;
+        background-color: $colorLightPrimary;
+    }
+
+    &.btn--inverted {
+        background-color: $colorLightPrimary;
+        color: $colorDarkPrimary;
+        border-color: $colorLightPrimary;
+
+        &:hover {
+            background-color: transparent;
+            color: $colorLightPrimary;
+            border-color: $colorLightPrimary;
+        }
+    }
+
+    &:disabled {
+        color: $colorDarkDisabled;
+    }
+
+/*doc
+---
+title: Button Colours
+name: button-2-colours
+category: Buttons
+---
+```html_example
+<button class="btn btn--secondary">Secondary</button>
+<button class="btn btn--tertiary">Tertiary</button>
+<button class="btn btn--special">Special</button>
+<button class="btn btn--facebook">Facebook</button>
+```
+> example-container
+
+### On dark background
+
+```html_example
+<div style="background-color: black; padding: 50px;">
+    <button class="btn btn--inverted">Primary button</button>
+    <button class="btn btn--secondary btn--inverted">Secondary button</button>
+</div>
+```
+
+*/
+    &.btn--secondary {
+        background-color: transparent;
+        color: $colorDarkPrimary;
+        border-color: $colorDarkPrimary;
+
+        &:hover {
+            background-color: $colorDarkPrimary;
+            color: $colorLightPrimary;
+            border-color: $colorDarkPrimary;
+        }
+
+        &.btn--inverted {
+            color: $colorLightPrimary;
+            border-color: $colorLightPrimary;
+
+            &:hover {
+                background-color: $colorLightPrimary;
+                color: $colorDarkPrimary;
+                border-color: $colorLightPrimary;
+            }
+        }
+
+        &:disabled {
+            color: $colorDarkDisabled;
+        }
+    }
+
+    &.btn--tertiary {
+        background-color: $colorDarkTertiary;
+        color: $colorLightPrimary;
+        border-color: transparent;
+
+        &:hover {
+            background-color: $colorLightPrimary;
+            color: $colorDarkPrimary;
+        }
+
+        &:disabled {
+            color: $colorDarkDisabled;
+        }
+    }
+
+    &.btn--special {
+        background-color: $colorDarkSecondary;
+        color: white;
+        border-color: $colorDarkSecondary;
+
+        &:hover {
+            background-color: $colorLightPrimary;
+            color: $colorDarkSecondary;
+        }
+
+        &:disabled {
+            color: $colorLightDisabled;
+        }
+    }
+
+
+/*doc
+---
+title: Button Sizes
+name: button-3-sizes
+category: Buttons
+---
+```html_example
+<button class="btn btn--tiny">Tiny</button>
+<button class="btn btn--regular">Regular</button>
+<button class="btn btn--medium">Medium</button>
+<button class="btn btn--large">Large</button>
+```
+> example-container
+
+### CTAs
+And then there are Call-to-action buttons, called `fluid` buttons. They take the full width of their parent contrainer.
+
+```html_example
+<button class="btn btn--medium btn--fluid">I'm super fluid bro!</button>
+```
+> example-container
+
+#### More engagement
+Maximize user engagement with a tiny direction arrow!
+
+```html_example
+<button class="btn btn--medium btn--fluid btn--cta">Tap me</button>
+```
+> example-container
+
+
+*/
+    &.btn--tiny {
+        padding: 6px;
+        border: 1px solid;
+        font-size: 10px;
+    }
+
+    &.btn--medium {
+        padding: 18px;
+
+    }
+
+    &.btn--large  {
+        padding: 24px;
+        font-size: $fontsizeL;
+    }
+
+    // Layout variations
+    &.btn--fluid  { width: 100% }
+    &.btn--cta {
+        &:after { content: " >" }
+    }
+
+    &.js-loading {
+        background-color: $colorDarkPrimary;
+
+        span {
+            @include animation(fadeIn .5s .5s backwards);
+            display: block;
+            width: 24px;
+            height: 24px;
+            background: url(/images/local/icons/z_ajax.gif) center no-repeat;
+            background-size: 24px;
+            margin: -7px auto;
+            text-indent: -9999px;
+            min-width: 100px;
+        }
+    }
+}
+
+/*doc
+---
+title: Input Group
+name: button-5-inputgroup
+category: Buttons
+---
+
+Input groups consist of a text input to the left and button directly next to it, with the same height.
+
+```html_example
+<div class="btn-input-group">
+    <input type="text" class="btn-input-group__input" placeholder="Hi there!" />
+    <button class="btn btn-input-group__btn">Hook me up</button>
+</div>
+```
+*/
+.btn-input-group {
+    @include clearfix;
+
+    .btn-input-group__input,
+    .btn-input-group__btn {
+        float: left;
+        height: 38px;
+    }
+
+    .btn-input-group__input {
+        width: 60%;
+        border-right: 0;
+
+        input {
+            font-size: 12px;
+            padding: 10px;
+            line-height: 1;
+        }
+    }
+
+    .btn-input-group__btn {
+        width: 40%;
+
+        .btn { width: 100% }
+    }
+}

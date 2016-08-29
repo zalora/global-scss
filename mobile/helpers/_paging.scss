@@ -1,0 +1,36 @@
+/* pagination */
+.pagination {
+  text-align: center;
+}
+.pagination li {
+  display: inline-block;
+  font-size: $fontsizeS;
+  background-color: $colorLightPrimary;
+}
+.pagination a,
+.pagination .current {
+  display: block;
+  padding: 6px 12px 6px;
+  border: 1px solid $colorMedium;
+}
+.pagination .current {
+  border: 1px solid $colorDarkPrimary;
+}
+
+.pagination .disable {
+  color: $colorMedium;
+}
+
+.pagination .previous {
+  float: left;
+}
+
+.pagination .next {
+  float: right;
+}
+
+.pagination .next a,
+.pagination .previous a {
+  line-height: 0px;
+  padding: 9px 12px 9px;
+}
