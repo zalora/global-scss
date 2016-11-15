@@ -61,6 +61,7 @@ This gives a button the shape and coolness it deserves for being a button in a Z
     }
 
     &:disabled {
+        opacity: 0.5;
         color: $colorDarkDisabled;
     }
 
