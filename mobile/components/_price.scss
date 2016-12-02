@@ -1,4 +1,29 @@
+/*doc
+---
+title: Price
+name: mobile-components-1
+category: Components-Mobile
+---
 
+Price boxes are a common way to display a price of an item. Note the containers for reduced and special prices:
+
+
+```html_example
+<div>
+<strong> Without Discount </strong>
+	<br/>
+	<span class="price-box"> $15 <span>
+</div>
+<div class="price-box">
+<strong> With Discount </strong>
+	<br/>
+	<span class="price-box__special-price"> $10 </span>
+	<br/>
+	<span class="price-box__old-price"> $15 </span>
+</div>
+```
+> example-container
+*/
 .price-box {
   color: $colorDarkPrimary;
     .price-box__old-price {

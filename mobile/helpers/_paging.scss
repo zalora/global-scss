@@ -1,3 +1,39 @@
+/*doc
+---
+title: Pagination
+name: mobile-components-2
+category: Components-Mobile
+---
+
+Pagination
+
+This component is used mainly in the catalog of the shop, for example:
+
+
+```html_example
+<section>
+  <ul class="pagination mbs">
+    <li class="mrxs">
+      <span title="1" class=" current" data-url="/women/clothing/?page=1">1</span>
+    </li>
+    <li class="mrxs">
+      <a title="2" class="" data-url="/women/clothing/?page=2">2</a>
+    </li>
+    <li class="mrxs">
+      <a title="3" class="" data-url="/women/clothing/?page=3">3</a>
+    </li>
+    <li class="mrxs">
+      <a title="4" class="" data-url="/women/clothing/?page=4">4</a>
+    </li>
+    <li class="mrxs">
+      <a title="5" class="" data-url="/women/clothing/?page=5">5</a>
+    </li>
+  </ul>
+</section>
+```
+> example-container
+*/
+
 /* pagination */
 .pagination {
   text-align: center;

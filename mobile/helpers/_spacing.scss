@@ -1,3 +1,33 @@
+/*doc
+---
+title: Spacing
+name: mobile-components-1
+category: Components-Mobile
+---
+
+Price boxes are a common way to display a price of an item. Note the containers for reduced and special prices:
+
+
+```html_example
+    <p>
+      13px - SpaceXSmall
+    </p>
+    <p>
+      16px - SpaceSmall
+    </p>
+    <p>
+      25px - SpaceMedium
+    </p>
+    <p>
+      35px - SpaceLarge
+    </p>
+    <p>
+      45px - SpaceXLarge
+    </p>
+```
+> example-container
+*/
+
 /* ==========================================================================
    Spacing-specific utilities
    ========================================================================== */

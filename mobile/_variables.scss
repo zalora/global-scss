@@ -1,18 +1,92 @@
 //-------------------------------------
 // Variables
 //-------------------------------------
+/*doc
+---
+title: Mobile Colours
+name: colour-mobile-1
+category: Colours-Mobile
+type: mobile
+---
 
+Colors on mobile devices has a much more limited range than on desktop and are more similar to the APP.
+
+```html_example
+<h3>Primary Colours</h3>
+
+Our base colour palette is monochrome.
+
+<ul class="color-palette ui-listUnstyled grid">
+    <li class="grid__col grid__col--narrow color-palette__color">
+        <div class="mrm color-palette__color__sample colorDarkPrimary"></div>
+        <code class="mts ui-inlineBlock color-palette__color__variablename">$colorDarkPrimary</code>
+    </li>
+    <li class="grid__col grid__col--narrow color-palette__color color colorLightPrimary">
+        <div class="mrm color-palette__color__sample colorLightPrimary border"></div>
+        <code class="mts ui-inlineBlock color-palette__color__variablename">$colorLightPrimary</code>
+    </li>
+</ul>
+
+<h3>Additional Colours</h3>
+
+Only 3 shades of grey
+
+<ul class="color-palette ui-listUnstyled grid">
+    <li class="grid__col grid__col--narrow color-palette__color">
+        <div class="mrm color-palette__color__sample colorLightSecondary"></div>
+        <code class="mts ui-inlineBlock color-palette__color__variablename">$colorLightSecondary</code>
+    </li>
+    <li class="grid__col grid__col--narrow color-palette__color">
+        <div class="mrm color-palette__color__sample colorMedium"></div>
+        <code class="mts ui-inlineBlock color-palette__color__variablename">$colorMedium</code>
+    </li>
+    <li class="grid__col grid__col--narrow color-palette__color">
+        <div class="mrm color-palette__color__sample colorDarkTertiary"></div>
+        <code class="mts ui-inlineBlock color-palette__color__variablename">$colorDarkTertiary</code>
+    </li>
+</ul>
+
+<h3>Feedback/Highlight Colours</h3>
+
+These colours are used to highlight elements and/or to give positive, negative or neutral feedback.
+
+<ul class="color-palette ui-listUnstyled grid">
+    <li class="grid__col grid__col--narrow color-palette__color">
+        <div class="mrm color-palette__color__sample colorPositiveDark"></div>
+        <code class="mts ui-inlineBlock color-palette__color__variablename">$colorPositiveDark</code>
+    </li>
+    <li class="grid__col grid__col--narrow color-palette__color">
+        <div class="mrm color-palette__color__sample colorPositiveLight"></div>
+        <code class="mts ui-inlineBlock color-palette__color__variablename">$colorPositiveLight</code>
+    </li>
+    <li class="grid__col grid__col--narrow color-palette__color">
+        <div class="mrm color-palette__color__sample colorNeutral"></div>
+        <code class="mts ui-inlineBlock color-palette__color__variablename">$colorNeutral</code>
+    </li>
+    <li class="grid__col grid__col--narrow color-palette__color">
+        <div class="mrm color-palette__color__sample colorNegativeDark"></div>
+        <code class="mts ui-inlineBlock color-palette__color__variablename">$colorNegativeDark</code>
+    </li>
+    <li class="grid__col grid__col--narrow color-palette__color">
+        <div class="mrm color-palette__color__sample colorNegativeLight"></div>
+        <code class="mts ui-inlineBlock color-palette__color__variablename">colorNegativeLight</code>
+    </li>
+</ul>
+```
+> example-container
+*/
 // Colors
 $colorLightPrimary:             #fff;       // White
 $colorLightSecondary:           #F3F3F3;    // Light Grey
 $colorMedium:                   #E6E6E6;    // Medium Grey
 $colorDarkPrimary:              #000;       // Black
 $colorDarkSecondary:            #909090;    // Teal
-$colorDarkTertiary:             #9DABAE;    // Dark Grey
+$colorDarkTertiary:             #6d6e6e;    // Dark Grey
 $colorPositiveLight:            #D4ECE7;    // Mint
 $colorPositiveDark:             #00B09f;    // Neon Teal
 $colorNegativeLight:            #FF8484;    // Dark Red / Salmon
 $colorNegativeDark:             #BA4242;    // Light Red
+$colorNeutral:                  #9DABAE;
 
 $colorFacebook:                 #3a5795;    // Funny facebook dark blue
 $colorFacebookHover:            #2B4273;    // Bit darken facebook blue
