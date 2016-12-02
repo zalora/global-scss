@@ -14,7 +14,8 @@ The base class for a button is `'.btn'`.
 This gives a button the shape and coolness it deserves for being a button in a ZALORA project.
 
 ```html_example
-    <button class="btn">Hello</button>
+<button class="btn">Hello</button>
+<button class="btn" disabled>Disabled Button</button>
 ```
 > example-container
 */
@@ -76,6 +77,11 @@ category: Buttons
 <button class="btn btn--tertiary">Tertiary</button>
 <button class="btn btn--special">Special</button>
 <button class="btn btn--facebook">Facebook</button>
+<hr>
+<button class="btn btn--secondary" disabled>Secondary</button>
+<button class="btn btn--tertiary" disabled>Tertiary</button>
+<button class="btn btn--special" disabled>Special</button>
+<button class="btn btn--facebook" disabled>Facebook</button>
 ```
 > example-container
 
@@ -84,7 +90,6 @@ category: Buttons
 ```html_example
 <div style="background-color: black; padding: 50px;">
     <button class="btn btn--inverted">Primary button</button>
-    <button class="btn btn--secondary btn--inverted">Secondary button</button>
 </div>
 ```
 
@@ -127,7 +132,7 @@ category: Buttons
         }
 
         &:disabled {
-            color: $colorDarkDisabled;
+            color: $colorLightPrimary;
         }
     }
 
