@@ -114,21 +114,6 @@ category: Buttons-Mobile
         }
     }
 
-    &.btn--tertiary {
-        background-color: $colorDarkTertiary;
-        color: $colorLightPrimary;
-        border-color: transparent;
-
-        &:hover {
-            background-color: $colorLightPrimary;
-            color: $colorDarkPrimary;
-        }
-
-        &:disabled {
-            color: $colorDarkDisabled;
-        }
-    }
-
     &.btn--special {
         background-color: $colorDarkSecondary;
         color: white;
