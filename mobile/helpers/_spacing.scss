@@ -29,6 +29,14 @@ a,t,r,b,l,h,v = all,top,right,bottom,left,horizontal,vertical
 s,m,l,n = small(5px),medium(10px),large(20px),none(0px)
 */
 
+.ptn, .pvn, .pan {
+  padding-top: 0px;
+}
+
+.ptxs, .pvxs, .paxs {
+  padding-top: $spaceXSmall;
+}
+
 .pts, .pvs, .pas {
   padding-top: $spaceSmall;
 }
@@ -44,6 +52,14 @@ s,m,l,n = small(5px),medium(10px),large(20px),none(0px)
 
 .ptxl, .pvxl, .paxl {
   padding-top: $spaceXLarge;
+}
+
+.prn, .phn, .pan {
+  padding-right: 0px;
+}
+
+.prxs, .phxs, .paxs {
+  padding-right: $spaceXSmall;
 }
 
 .prs, .phs, .pas {
@@ -63,6 +79,14 @@ s,m,l,n = small(5px),medium(10px),large(20px),none(0px)
   padding-right: $spaceXLarge;
 }
 
+.pbn, .pvn, .pan {
+  padding-bottom: 0px;
+}
+
+.pbxs, .pvxs, .paxs {
+  padding-bottom: $spaceXSmall;
+}
+
 .pbs, .pvs, .pas {
   padding-bottom: $spaceSmall;
 }
@@ -78,6 +102,14 @@ s,m,l,n = small(5px),medium(10px),large(20px),none(0px)
 
 .pbxl, .pvxl, .paxl {
   padding-bottom: $spaceXLarge;
+}
+
+.pln, .phn, .pan {
+  padding-left: 0px;
+}
+
+.plxs, .phxs, .paxs {
+  padding-left: $spaceXSmall;
 }
 
 .pls, .phs, .pas {
