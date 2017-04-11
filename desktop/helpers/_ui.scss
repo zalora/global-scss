@@ -76,6 +76,10 @@ Use this with caution, but we have helpers to add borders to things:
   border: 1px solid $colorMedium;
 }
 
+.ui-border-light-secondary {
+  border: 1px solid $colorLightSecondary;
+}
+
 .ui-borderTop {
   border-top: 1px solid $colorMedium;
 }
@@ -438,4 +442,13 @@ Helpers to style the appearance of text
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
+}
+/* ui background color */
+.ui-bg-light-primary {
+  background-color: $colorLightPrimary;
+}
+
+/* ui text color */
+.ui-text-dark-tertiary {
+  color: $colorDarkTertiary;
 }
