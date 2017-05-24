@@ -30,11 +30,10 @@ Titlebars are used in conjunction with the [spacing helper classes](/components/
     line-height: 1;
     background-color: $colorMedium;
     color: $colorDarkPrimary;
-    text-transform: uppercase;
 
     h1, h2, h3 {
         margin: 0;
-        font-size: 13px;
+        font-size: $fontsizeM;
         line-height: 1;
         font-weight: 400;
     }

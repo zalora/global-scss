@@ -163,10 +163,6 @@ s,m,l,n = small(5px),medium(10px),large(20px),none(0px)
   margin-top: 0px;
 }
 
-.mbn, .mvn, .man {
-  margin-bottom: 0px;
-}
-
 .mtxs, .mvxs, .maxs {
   margin-top: $spaceXSmall;
 }
@@ -186,6 +182,10 @@ s,m,l,n = small(5px),medium(10px),large(20px),none(0px)
 
 .mtxl, .mvxl, .maxl {
   margin-top: $spaceXLarge;
+}
+
+.mrn, .mhn, .man {
+  margin-right: 0px;
 }
 
 .mrxs, .mhxs, .maxs {
@@ -213,6 +213,10 @@ s,m,l,n = small(5px),medium(10px),large(20px),none(0px)
   margin-right: $spaceXLarge;
 }
 
+.mbn, .mvn, .man {
+  margin-bottom: 0px;
+}
+
 .mbxs, .mvxs, .maxs {
   margin-bottom: $spaceXSmall;
 }
@@ -232,6 +236,10 @@ s,m,l,n = small(5px),medium(10px),large(20px),none(0px)
 
 .mbxl, .mvxl, .maxl {
   margin-bottom: $spaceXLarge;
+}
+
+.mln, .mhn, .man {
+  margin-left: 0px;
 }
 
 .mlxs, .mhxs, .maxs {
