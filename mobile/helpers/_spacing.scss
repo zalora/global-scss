@@ -88,6 +88,10 @@ s,m,l,n = small(5px),medium(10px),large(20px),none(0px)
   padding-right: 0px;
 }
 
+.prxxs, .phxxs, .paxxs {
+  padding-right: $spaceXXSmall;
+}
+
 .prxs, .phxs, .paxs {
   padding-right: $spaceXSmall;
 }
@@ -136,6 +140,10 @@ s,m,l,n = small(5px),medium(10px),large(20px),none(0px)
 
 .pln, .phn, .pan {
   padding-left: 0px;
+}
+
+.plxxs, .phxxs, .paxxs {
+  padding-left: $spaceXXSmall;
 }
 
 .plxs, .phxs, .paxs {
