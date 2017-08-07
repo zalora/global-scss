@@ -8,6 +8,7 @@ $colorLightSecondary:           #F4F4F4;    // Light Grey
 $colorMedium:                   #dfdfdf;    // Medium Grey
 $colorDarkPrimary:              #000;       // Black
 $colorDarkSecondary:            #265F63;    // Teal
+$colorNegativeDark:             #BA4242;    // Light Red
 $colorDarkTertiary:             #6d6e6e;    // Dark Grey
 $colorHighlightPositiveReduct:  #cdece9;    // Mint
 $colorHighlightPositive:        #00c8b4;    // Neon Teal
@@ -19,6 +20,18 @@ $colorFacebookHover:            #2B4273;    // Bit darken facebook blue
 
 $colorDarkDisabled:             #6d6e6e;
 $colorLightDisabled:            #cdece9;
+
+// text color
+$colorMuted1:                   #767676;
+$colorMuted2:                   #6c6c6c;
+$colorMuted3:                   #888888;
+$colorRed:                      #B01919;
+$colorWine:                     #890000;
+$colorGray:                     #313131;
+$colorTextSuccess:              #147820;
+$colorTextAttention:            #00b09f;
+$colorTextAttentionInverted:    #43ffec;
+
 
 // Spacings
 $spaceSmall:      5px;
@@ -34,3 +47,16 @@ $fontsizeL:      16px;
 $fontsizeXL:     18px;
 $fontsizeXXL:    22px;
 $fontsizeXXXL:   24px;
+
+
+// Various lines
+// can be used as borders, underlines, separators
+// https://projects.invisionapp.com/share/8CAS4KBDB#/screens/82068093_StyleguideM1-VisualElements-Lines
+
+// line weight
+$lineThin:        1px;
+$lineThick:       2px;
+
+// line color
+$lineColorLight:  $colorLightSecondary;
+$lineColorDark:   $colorMedium;
