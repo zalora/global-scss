@@ -180,51 +180,43 @@ No modifiers
 Styleguide 4.4.1
 */
 .text-muted {
-    color: #767676;
+    color: $colorMuted1;
 }
 
 .text-muted-2 {
-    color: #6c6c6c;
+    color: $colorMuted2;
 }
 
 .text-muted-3 {
-    color: #888888;
+    color: $colorMuted3;
 }
 
 .text-red {
-    color: #B01919;
+    color: $colorRed;
 }
 
 .text-wine {
-    color: #890000;
+    color: $colorWine;
 }
 
 .text-white {
-    color: #FFF;
+    color: $colorLightPrimary;
 }
 
 .text-gray {
-    color: #313131;
-}
-
-.text-black {
-    color: #000;
-}
-
-.text-info {
-    color: #313131;
+    color: $colorGray;
 }
 
 .text-success {
-    color: #147820;
+    color: $colorTextSuccess;
 }
 
 .text-attention {
-    color: #00b09f;
+    color: $colorTextAttention;
 }
 
 .text-attention-inverted {
-    color: #43ffec;
+    color: $colorTextAttentionInverted;
 }
 
 .text-dark-primary {
