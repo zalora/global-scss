@@ -98,3 +98,143 @@ em {
     font-weight: 700;
     font-style: normal;
 }
+
+.font-xlarge {
+    font-size: $fontsizeXL;
+}
+
+.font-large {
+    font-size: $fontsizeL;
+}
+
+.font-medium {
+    font-size: $fontsizeM;
+}
+
+.font-small {
+    font-size: $fontsizeS;
+}
+
+/*
+# Text Emphasis - Style
+
+Emphasize text by making it italic with *&lt;em&gt;*, or bold with *&lt;strong&gt;*.
+
+Or change the case with *text-upper* or *text-lower*.
+
+    <p><em>This is italic text</em></p>
+    <p><strong>This is bold text</strong></p>
+    <p class="text-upper">This text is in uppercase</p>
+    <p class="text-lower">This text is in lowercase</p>
+    <p class="text-2em">This text is vertically aligned in the middle with 0.5em padding in top and bottom</p>
+    <p class="text-line-through">This text is line-through</p>
+
+No modifiers
+
+Styleguide 4.4.0
+*/
+
+.text-upper {
+    text-transform: uppercase;
+}
+
+.text-lower {
+    text-transform: lowercase;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}
+
+.text-2em {
+    line-height: 2em;
+}
+
+.text-line-through {
+    text-decoration: line-through;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+/*
+# Text Emphasis - Color
+
+Use color to convey meaning about the content.
+
+    <p class="text-muted">This is muted text</p>
+    <p class="text-muted-2">This is muted text 2</p>
+    <p class="text-muted-3">This is muted text 3</p>
+    <p class="text-red">This is red text</p>
+    <p class="text-wine">This is wine text</p>
+    <p class="text-white">This is white text</p>
+    <p class="text-gray">This is gray text</p>
+    <p class="text-black">This is black text</p>
+    <p class="text-success">This is success text</p>
+    <p class="text-info">This is informational text</p>
+    <p class="text-attention">This is important text</p>
+    <p class="text-attention-inverted">This is important text inverted</p>
+
+No modifiers
+
+Styleguide 4.4.1
+*/
+.text-muted {
+    color: #767676;
+}
+
+.text-muted-2 {
+    color: #6c6c6c;
+}
+
+.text-muted-3 {
+    color: #888888;
+}
+
+.text-red {
+    color: #B01919;
+}
+
+.text-wine {
+    color: #890000;
+}
+
+.text-white {
+    color: #FFF;
+}
+
+.text-gray {
+    color: #313131;
+}
+
+.text-black {
+    color: #000;
+}
+
+.text-info {
+    color: #313131;
+}
+
+.text-success {
+    color: #147820;
+}
+
+.text-attention {
+    color: #00b09f;
+}
+
+.text-attention-inverted {
+    color: #43ffec;
+}
+
+.text-dark-primary {
+    color: $colorDarkPrimary;
+}
+
+.text-dark-secondary {
+    color: $colorDarkSecondary;
+}
+
+.text-negative-dark {
+    color: $colorNegativeDark;
+}
