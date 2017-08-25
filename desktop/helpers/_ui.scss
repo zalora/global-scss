@@ -223,7 +223,7 @@ These are css helper classes ready to use for layouting directly in html.
 
 */
 .fss    { font-size: $fontsizeS }
-.fsn    { font-size: $fontsizeM }
+.fsm    { font-size: $fontsizeM }
 .fsl    { font-size: $fontsizeL }
 .fsxl   { font-size: $fontsizeXL }
 .fsxxl  { font-size: $fontsizeXXL }
@@ -266,6 +266,10 @@ Helpers to style the appearance of text
   font-style: italic;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
 /* hides text replaced by images */
 
 .hiddenText {
@@ -295,6 +299,20 @@ Helpers to style the appearance of text
 
 .txtCenter {
   text-align: center;
+}
+
+/* text-color */
+.text-dark-secondary {
+  color: $colorDarkSecondary;
+}
+
+.text-highlight-positive {
+  color: $colorHighlightPositive;
+}
+
+/* vertical-align */
+.vAlignMiddle {
+  vertical-align: middle;
 }
 
 /* word-wrap */
