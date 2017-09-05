@@ -95,3 +95,31 @@
         clear: both;
     }
 }
+
+@mixin ellipsis($max-height, $lines: 2) {
+  // Fallback for non-webkit browsers.
+  // Fallback does not render ellipsis.
+  overflow: hidden;
+  max-height: $max-height;
+
+  // Webkit solution for multiline ellipsis
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $lines;
+
+  // Solution for Opera
+  text-overflow: -o-ellipsis-lastline;
+}
+
+// Negative Margins
+// In order to solve collisions between spaces and line-height
+// pseudo elements couldn't be used, because of problems with overflow hidden!
+@mixin negative-margins($font-size: 12px, $line-height: 1.6, $ignore-top: false) {
+  line-height: $line-height;
+
+  @if $ignore-top == false {
+    margin-top: -$font-size * ($line-height - 1) / 2;
+  }
+
+  margin-bottom: -$font-size * ($line-height - 1) / 2;
+}
