@@ -63,6 +63,10 @@ s,m,l,n = small(5px),medium(10px),large(20px),none(0px)
   padding-top: 0px;
 }
 
+.ptxxs, .pvxxs, .paxxs {
+  padding-top: $spaceXXSmall;
+}
+
 .ptxs, .pvxs, .paxs {
   padding-top: $spaceXSmall;
 }
@@ -115,6 +119,10 @@ s,m,l,n = small(5px),medium(10px),large(20px),none(0px)
 
 .pbn, .pvn, .pan {
   padding-bottom: 0px;
+}
+
+.pbxxs, .pbxxs, .paxxs {
+  padding-bottom: $spaceXXSmall;
 }
 
 .pbxs, .pvxs, .paxs {
@@ -171,6 +179,10 @@ s,m,l,n = small(5px),medium(10px),large(20px),none(0px)
   margin-top: 0px;
 }
 
+.mtxxs, .mvxxs, .maxxs {
+  margin-top: $spaceXXSmall;
+}
+
 .mtxs, .mvxs, .maxs {
   margin-top: $spaceXSmall;
 }
@@ -194,6 +206,10 @@ s,m,l,n = small(5px),medium(10px),large(20px),none(0px)
 
 .mrn, .mhn, .man {
   margin-right: 0px;
+}
+
+.mrxxs, .mhxxs, .maxxs {
+  margin-right: $spaceXXSmall;
 }
 
 .mrxs, .mhxs, .maxs {
@@ -225,6 +241,10 @@ s,m,l,n = small(5px),medium(10px),large(20px),none(0px)
   margin-bottom: 0px;
 }
 
+.mbxxs, .mvxxs, .maxxs {
+  margin-bottom: $spaceXXSmall;
+}
+
 .mbxs, .mvxs, .maxs {
   margin-bottom: $spaceXSmall;
 }
@@ -248,6 +268,10 @@ s,m,l,n = small(5px),medium(10px),large(20px),none(0px)
 
 .mln, .mhn, .man {
   margin-left: 0px;
+}
+
+.mlxxs, .mhxxs, .maxxs {
+  margin-left: $spaceXXSmall;
 }
 
 .mlxs, .mhxs, .maxs {
