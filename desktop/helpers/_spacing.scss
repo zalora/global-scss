@@ -180,3 +180,11 @@ s,m,l,n = small(5px),medium(10px),large(20px),none(0px)
 .mll, .mhl, .mal {
   margin-left: $spaceLarge;
 }
+
+.mlxl, .mhxl, .maxl {
+  margin-left: $spaceXLarge;
+}
+
+.mlxxl, .mhxxl, .maxxl {
+  margin-left: $spaceXXLarge;
+}
