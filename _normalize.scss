@@ -265,6 +265,11 @@ textarea {
 
 button {
   overflow: visible;
+  /**
+   * For overriding the new button style of Chrome 62 MacOS
+   * https://www.chromestatus.com/features/5743649186906112
+   */
+  border-radius: 0;
 }
 
 /**
