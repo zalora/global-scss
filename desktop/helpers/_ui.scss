@@ -287,6 +287,10 @@ Helpers to style the appearance of text
   text-transform: uppercase;
 }
 
+.txtNormal {
+  text-transform: none;
+}
+
 .txtLower {
   text-transform: lowercase;
 }
