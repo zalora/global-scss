@@ -10,6 +10,12 @@
 @import "mixins";
 @import "animations";
 
+//------------------------------------
+// Mixins
+//------------------------------------
+@import "desktop/mixins/flex-grid";
+@import "desktop/mixins/flex";
+
 /* Basic styling for the whole site */
 @import "base-styling";
 
@@ -32,3 +38,4 @@
 @import "desktop/helpers/state";
 @import "desktop/helpers/ui";
 @import "desktop/helpers/grid";
+@import "desktop/helpers/flex-grid";

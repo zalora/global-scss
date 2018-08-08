@@ -1,0 +1,78 @@
+// Grid system
+
+@mixin makeContainer() {
+  box-sizing: border-box;
+  max-width: $containerMaxWidth;
+  min-width: $containerMinWidth;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: calc(#{$containerPadding} + #{$gridGutterWidth} / 2);
+  padding-right: calc(#{$containerPadding} + #{$gridGutterWidth} / 2);
+}
+
+@mixin makeRow() {
+  @include flexbox;
+  @include flex-wrap(wrap);
+  // Set a minus margin to offest the padding of columns.
+  // It helps to maintain alignment when there is nested content
+  margin-left: ($gridGutterWidth / -2);
+  margin-right: ($gridGutterWidth / -2);
+}
+
+@mixin makeColReady() {
+  position: relative;
+  // Prevent columns from becoming too narrow when at smaller grid tiers by
+  // always seting 'width: 100%'. This works because we use 'flex' values
+  // later on to override this initial width.
+  width: 100%;
+  min-height: 1px; // prevent collapsing
+  padding-right: ($gridGutterWidth / 2);
+  padding-left: ($gridGutterWidth / 2);
+}
+
+
+@mixin makeCol($size, $columns) {
+  @include flex(0 0 percentage($size / $columns));
+  // Add 'max-width' to ensure content within each column does not blow out
+  // the width of the column. Applies to IE10+ and Firefox. Chrome and Safari 
+  // do not appear to require this
+  max-width: percentage($size / $columns);
+}
+
+@mixin makeColOffset($size, $columns) {
+  $num: $size / $columns;
+  margin-left: if($num == 0, 0, percentage($num));
+}
+
+@mixin makeContainerClasses($infix) {
+  .justify-content#{$infix}-start   { justify-content: flex-start !important; }
+  .justify-content#{$infix}-end     { justify-content: flex-end !important; }
+  .justify-content#{$infix}-center  { justify-content: center !important; }
+  .justify-content#{$infix}-between { justify-content: space-between !important; }
+  .justify-content#{$infix}-around  { justify-content: space-around !important; }
+
+  .align-items#{$infix}-start    { align-items: flex-start !important; }
+  .align-items#{$infix}-end      { align-items: flex-end !important; }
+  .align-items#{$infix}-center   { align-items: center !important; }
+  .align-items#{$infix}-baseline { align-items: baseline !important; }
+  .align-items#{$infix}-stretch  { align-items: stretch !important; }
+
+  .no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+  
+    > .col,
+    > [class*="col-"] {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+}
+
+@mixin makeItemClasses($infix) {
+  .col#{$infix}-auto {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: none;
+  }
+}

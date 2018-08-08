@@ -32,6 +32,7 @@ $colorGray:                     #313131;
 $colorTextSuccess:              #147820;
 $colorTextAttention:            #00b09f;
 $colorTextAttentionInverted:    #43ffec;
+$highlight:                     #ffdd00;
 
 
 // Spacings
@@ -61,3 +62,37 @@ $lineThick:       2px;
 // line color
 $lineColorLight:  $colorLightSecondary;
 $lineColorDark:   $colorMedium;
+
+
+// Grid system
+
+$gridGutterWidth: 20px;
+
+$containerMinWidth: 600px;
+$containerMaxWidth: 1344px;
+
+$containerPadding: 3.33%;
+
+$breakPointsLg: 1024px;
+
+$gridSmColumns: 8;
+$gridLgColumns: 12;
+
+// New font styles
+
+$fontSizeBase:              1rem !default; // typically `16px`
+$fontSizeLg:                ($fontSizeBase * 1.25) !default;
+$fontSizeMd:                ($fontSizeBase * 1) !default;
+$fontSizeSm:                ($fontSizeBase * .875) !default;
+$fontSizeXSm:               ($fontSizeBase * .75) !default;
+
+$fontWeightBase:            400 !default;
+$fontWeightBold:            700 !default;
+$fontWeightRegular:         $fontWeightBase !default;
+
+$headingsLineHeight:        1.2 !default;
+
+
+// Footer
+
+$footerDarkBg: $colorDarkPrimary;

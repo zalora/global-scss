@@ -61,6 +61,18 @@ This gives a button the shape and coolness it deserves for being a button in a Z
         }
     }
 
+    &.btn-outline-light {
+        background-color: transparent;
+        color: $colorLightPrimary;
+        border-color: $colorLightPrimary;
+    
+        &:hover {
+            background-color: $colorLightPrimary;
+            color: $colorDarkPrimary;
+            border-color: $colorLightPrimary;
+        }
+    }
+
     &:disabled {
         opacity: 0.5;
         color: $colorDarkDisabled;
