@@ -45,12 +45,8 @@ textarea {
     }
 
     &.success {
-    border: 1px solid #00c8b4;
-    background: url("../../../images/local/icons/svg/icon_check-light.svg") no-repeat right 10px center #fff;
-    }
-
-    &.progressing {
-
+      border: 1px solid #00c8b4;
+      background: url("../../../images/local/icons/svg/icon_check-light.svg") no-repeat right 10px center #fff;
     }
 
     &.disabled {
