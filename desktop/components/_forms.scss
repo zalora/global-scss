@@ -44,6 +44,11 @@ textarea {
       background: url('../../../images/local/checkout/red_error_icon-02112015.png') no-repeat right 10px center $colorLightPrimary;
     }
 
+    &.success {
+      border: 1px solid #00c8b4;
+      background: url("../../../images/local/icons/svg/icon_check-light.svg") no-repeat right 10px center #fff;
+    }
+
     &.disabled {
         opacity: .6;
     }
@@ -106,6 +111,76 @@ label {
     .form-horizontal__input {
         &.fluid {
             width: 100%;
+        }
+    }
+}
+
+
+.custom-control{
+    padding-left: 1.5rem;
+    &--inline {
+        display: inline-flex;
+    }
+
+    .custom-control__input {
+        position: absolute;
+        z-index: -1; // Put the input behind the label so it doesn't overlay text
+        opacity: 0;
+      
+        &:checked ~ .custom-control__label::before {
+          color: $colorLightPrimary;
+          background-color: $colorDarkPrimary;
+        }
+
+    }
+
+
+    .custom-control__label {
+        position: relative;
+        margin-bottom: 0;
+        margin-right: 1rem;
+      
+        // Background-color and (when enabled) gradient
+        &::before {
+          position: absolute;
+          top: .25rem;
+          left: -1.5rem;
+          display: block;
+          width: 1rem;
+          height: 1rem;
+          pointer-events: none;
+          content: "";
+          user-select: none;
+          background-color: $colorLightPrimary;
+        }
+      
+        // Foreground (icon)
+        &::after {
+          position: absolute;
+          top: .25rem;
+          left: -1.5rem;
+          display: block;
+          width: 1rem;
+          height: 1rem;
+          content: "";
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: 50% 50%;
+        }
+      }
+
+    &.custom-radio {
+        .custom-control__label::before {
+            border-radius: 50%;
+        }
+        
+        .custom-control__input:checked ~ .custom-control__label {
+            &::before {
+                background-color: $colorLightPrimary;
+            }
+            &::after {
+                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='%23000'/%3E%3C/svg%3E");
+            }
         }
     }
 }

@@ -1,0 +1,108 @@
+.container-fluid {
+  @include makeContainer();
+  
+  &.is-debug {
+    .flex-row{
+      > .col,
+      > [class*='col-'] {
+        border: 1px solid rgba($colorDarkTertiary, .35);
+        background-color: rgba($colorLightSecondary, .35);
+      }
+    } 
+  }
+}
+
+.flex-row {
+  @include makeRow();
+}
+
+.col,
+[class*='col-'] {
+  @include flex(0 0 auto);
+  box-sizing: border-box;
+  @include makeColReady();
+}
+
+@media only screen and (max-width: $breakPointsLg - 0.02px){
+  @for $i from 0 through $gridSmColumns {
+    .col-sm-#{$i} {
+      @include makeCol($i, $gridSmColumns);
+    }
+  
+    .offset-sm-#{$i} {
+      @include makeColOffset($i, $gridSmColumns);
+    }
+  
+    .order-sm-#{$i} {
+      order: $i;
+    }
+  }
+
+  .order-sm-first {
+    order: -1;
+  }
+  
+  .order-sm-last {
+    order: $gridSmColumns + 1;
+  }
+
+  @include makeItemClasses('-sm');
+
+  @include makeContainerClasses('-sm');
+
+  .d-sm-none {
+    display: none;
+  }
+
+
+}
+
+
+
+@media only screen and (min-width: $breakPointsLg) {
+  @for $i from 0 through $gridLgColumns {
+    .col-lg-#{$i} {
+      @include makeCol($i, $gridLgColumns);
+    }
+
+    .offset-lg-#{$i} {
+      @include makeColOffset($i, $gridLgColumns);
+    }
+
+    .order-lg-#{$i} {
+      order: $i;
+    }
+    
+  }
+
+  .order-lg-first {
+    order: -1;
+  }
+  
+  .order-lg-last {
+    order: $gridLgColumns + 1;
+  }
+
+  @include makeItemClasses('-lg');
+
+  @include makeContainerClasses('-lg');
+
+  .d-lg-none {
+    display: none;
+  }
+}
+
+
+.col {
+  @include flex-grow(1);
+  @include flex-basis(0);
+  max-width: 100%;
+}
+
+@include makeItemClasses('');
+
+@include makeContainerClasses('');
+
+.w-100 {
+  width: 100% !important;
+}
