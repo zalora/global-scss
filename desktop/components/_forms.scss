@@ -41,12 +41,12 @@ textarea {
 
     &.error {
       border: 1px solid $colorHighlightNegative;
-      background: url('../../../images/local/checkout/red_error_icon-02112015.png') no-repeat right 10px center $colorLightPrimary;
+      background: $iconExclamationmarkURL no-repeat right 10px center $colorLightPrimary;
     }
 
     &.success {
       border: 1px solid #00c8b4;
-      background: url("../../../images/local/icons/svg/icon_check-light.svg") no-repeat right 10px center #fff;
+      background: $iconCheckLightURL no-repeat right 10px center #fff;
     }
 
     &.disabled {
@@ -179,7 +179,7 @@ label {
                 background-color: $colorLightPrimary;
             }
             &::after {
-                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='%23000'/%3E%3C/svg%3E");
+                background-image: $iconRadioSelectedDotURL;
             }
         }
     }
