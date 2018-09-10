@@ -165,7 +165,7 @@ category: Buttons
 
     &.btn--facebook {
         background-color: $colorFacebook;
-        background-image: url("/images/icon_fb_white_logo.svg");
+        background-image: $iconFbURL;
         background-repeat: no-repeat;
         background-position: 9px center;
         background-size: 16px 16px;
@@ -248,7 +248,7 @@ Maximize user engagement with a tiny direction arrow!
             display: block;
             width: 24px;
             height: 24px;
-            background: url(/images/local/icons/z_ajax.gif) center no-repeat;
+            background: $iconAjaxURL center no-repeat;
             background-size: 24px;
             margin: -7px auto;
             text-indent: -9999px;
